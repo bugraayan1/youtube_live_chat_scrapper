@@ -26,7 +26,7 @@ while True:
         df = pd.DataFrame(comments)
         df.to_csv('comments2.csv' , mode = 'a' , header = False)
         browser.switch_to.default_content()
-    except exception as e:
+    except Exception as e:
         pass
     
     
